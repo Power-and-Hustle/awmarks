@@ -3,13 +3,34 @@ import { useForm } from 'react-hook-form';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
+import { toast } from "sonner";
 
 const ContactForm = () => {
-  const { register, handleSubmit, formState: { errors } } = useForm();
+  const { register, handleSubmit, formState: { errors }, reset } = useForm();
 
-  const onSubmit = (data) => {
-    console.log(data);
-    // Here you would typically send the data to your backend
+  const onSubmit = async (data) => {
+    try {
+      const response = await fetch('/api/send-email', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          ...data,
+          to: 'a.burenstamlinder@gmail.com'
+        }),
+      });
+
+      if (response.ok) {
+        toast.success("Form submitted successfully!");
+        reset();
+      } else {
+        toast.error("Failed to submit form. Please try again.");
+      }
+    } catch (error) {
+      console.error('Error submitting form:', error);
+      toast.error("An error occurred. Please try again later.");
+    }
   };
 
   return (
