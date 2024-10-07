@@ -10,7 +10,7 @@ const ContactCTA = () => {
         <h3 className="text-2xl mb-8">Free Marketing Consultation</h3>
         <Link to="/contact">
           <Button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            FREE CONSULT
+            Yes, I Want That!!
           </Button>
         </Link>
       </div>

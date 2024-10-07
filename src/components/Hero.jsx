@@ -10,7 +10,7 @@ const Hero = () => {
         <p className="text-xl mb-2 text-red-500 font-semibold">Guaranteed.</p>
         <Link to="/contact">
           <Button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
-            FREE CONSULT
+            Yes, I Want That!!
           </Button>
         </Link>
         <p className="mt-8 italic">
