@@ -4,19 +4,19 @@ import { Card, CardHeader, CardTitle, CardContent } from './ui/card';
 const differentiators = [
   {
     title: "GUARANTEE",
-    content: "Our first priority is to get you results. Love it or leave it."
-  },
-  {
-    title: "RESULT",
-    content: "We don't just do activities, we get results. You won't just have a nice website, but a website that converts."
-  },
-  {
-    title: "SPECIALIZATION",
-    content: "We only work with service-based businesses. We're not trying to be everything to everyone."
+    content: "We only win if you win. That's the basis for a good partnership. You won't carry all the risk, we'll share it."
   },
   {
     title: "LOCAL",
-    content: "We are not located overseas or across the country. We're in your neighborhood."
+    content: "We are not tucked away in some anonymous call center. We're a local company, so you'll be able to reach us when you need us."
+  },
+  {
+    title: "RESULT",
+    content: "Our first priority is to get you results. Less talk, more walk."
+  },
+  {
+    title: "SPECIALIZATION",
+    content: "Jack of all trades... Master of none. Specialization works. That's why we work with industries we know, so we can guarantee results."
   }
 ];
 
