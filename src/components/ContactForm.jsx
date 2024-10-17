@@ -33,7 +33,7 @@ const ContactForm = () => {
     }
   };
 
-  const inputClasses = "bg-gray-50 border border-gray-300 outline-black";
+  const inputClasses = "bg-gray-50 border-3 border-gray-300 outline-black";
 
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
