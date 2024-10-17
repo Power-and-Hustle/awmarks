@@ -33,6 +33,8 @@ const ContactForm = () => {
     }
   };
 
+  const inputClasses = "bg-gray-50 border border-gray-300 outline-black";
+
   return (
     <div className="max-w-2xl mx-auto p-6 bg-white shadow-lg rounded-lg">
       <h2 className="text-3xl font-bold mb-6 text-center text-indigo-700">Receive A Free Marketing Analysis</h2>
@@ -41,23 +43,23 @@ const ContactForm = () => {
       <p className="mb-8 text-center text-gray-600">No costs, no obligations, no annoying sales pitch. Guaranteed.</p>
       
       <form onSubmit={handleSubmit(onSubmit)} className="space-y-4">
-        <Input placeholder="Name" {...register("name", { required: true })} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="Name" {...register("name", { required: true })} className={inputClasses} />
         {errors.name && <span className="text-red-500">This field is required</span>}
         
-        <Input placeholder="Email" type="email" {...register("email", { required: true })} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="Email" type="email" {...register("email", { required: true })} className={inputClasses} />
         {errors.email && <span className="text-red-500">This field is required</span>}
         
-        <Input placeholder="Phone Number" {...register("phone")} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="Phone Number" {...register("phone")} className={inputClasses} />
         
-        <Input placeholder="Company Name" {...register("company")} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="Company Name" {...register("company")} className={inputClasses} />
         
-        <Textarea placeholder="What is your most important question?" {...register("question")} className="bg-gray-50 border border-gray-300" />
+        <Textarea placeholder="What is your most important question?" {...register("question")} className={inputClasses} />
         
-        <Input placeholder="How did you find us?" {...register("source")} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="How did you find us?" {...register("source")} className={inputClasses} />
         
-        <Input placeholder="What do you spend on advertising / month?" type="number" {...register("adSpend")} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="What do you spend on advertising / month?" type="number" {...register("adSpend")} className={inputClasses} />
         
-        <Input placeholder="Your company url" {...register("url")} className="bg-gray-50 border border-gray-300" />
+        <Input placeholder="Your company url" {...register("url")} className={inputClasses} />
         
         <Button type="submit" className="w-full bg-indigo-600 hover:bg-indigo-700 text-white">Submit</Button>
       </form>
