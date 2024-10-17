@@ -5,10 +5,13 @@ import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gray-900">
+    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200">
       <Header />
-      <main className="py-10">
-        <ContactForm />
+      <main className="py-20">
+        <div className="container mx-auto">
+          <h1 className="text-4xl font-bold text-center mb-8 text-indigo-700">Contact Us</h1>
+          <ContactForm />
+        </div>
       </main>
       <Footer />
     </div>
