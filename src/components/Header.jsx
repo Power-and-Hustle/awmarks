@@ -12,7 +12,7 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white p-4">
+    <header className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="text-2xl font-bold hover:text-yellow-300 transition-colors">
           AW MARKS
@@ -23,10 +23,10 @@ const Header = () => {
           </DropdownMenuTrigger>
           <DropdownMenuContent className="w-56 bg-white">
             <DropdownMenuItem asChild>
-              <Link to="/" onClick={() => setIsOpen(false)} className="text-indigo-700 hover:bg-indigo-100">Home</Link>
+              <Link to="/" onClick={() => setIsOpen(false)} className="text-blue-700 hover:bg-blue-100">Home</Link>
             </DropdownMenuItem>
             <DropdownMenuItem asChild>
-              <Link to="/contact" onClick={() => setIsOpen(false)} className="text-indigo-700 hover:bg-indigo-100">Contact Form</Link>
+              <Link to="/contact" onClick={() => setIsOpen(false)} className="text-blue-700 hover:bg-blue-100">Contact Form</Link>
             </DropdownMenuItem>
           </DropdownMenuContent>
         </DropdownMenu>
