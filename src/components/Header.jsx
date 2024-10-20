@@ -12,9 +12,9 @@ const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <header className="bg-gray-800 text-white p-4">
+    <header className="bg-gray-200 text-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold hover:text-gray-300 transition-colors">
+        <Link to="/" className="text-2xl font-bold hover:text-gray-600 transition-colors">
           AW MARKS
         </Link>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
