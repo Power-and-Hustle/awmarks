@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Hero = () => {
   return (
-    <section className="bg-gradient-to-r from-indigo-600 to-purple-700 text-white py-20">
+    <section className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
       <div className="container mx-auto text-center">
         <h1 className="text-4xl font-bold mb-4 text-yellow-300">More Growth. More Clients.</h1>
         <p className="text-xl mb-2 text-white font-semibold">Guaranteed.</p>

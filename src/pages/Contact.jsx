@@ -5,7 +5,7 @@ import Footer from '../components/Footer';
 
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-100 to-gray-200">
+    <div className="min-h-screen bg-gradient-to-b from-blue-600 to-cyan-500">
       <Header />
       <main className="py-20">
         <div className="container mx-auto">

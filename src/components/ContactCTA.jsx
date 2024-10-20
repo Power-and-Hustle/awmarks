@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const ContactCTA = () => {
   return (
-    <section className="bg-gradient-to-r from-purple-700 to-indigo-600 text-white py-20">
+    <section className="bg-gradient-to-r from-blue-600 to-cyan-500 text-white py-20">
       <div className="container mx-auto text-center">
         <h2 className="text-3xl font-bold mb-4 text-yellow-300">Contact Us For A</h2>
         <h3 className="text-2xl mb-8 text-yellow-300">Free Marketing Consultation</h3>
