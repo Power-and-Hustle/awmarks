@@ -22,16 +22,16 @@ const differentiators = [
 
 const Differentiators = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-200 to-gray-100">
+    <section className="py-20 bg-gray-100">
       <div className="container mx-auto">
-        <h2 className="text-3xl font-bold text-center mb-12 text-indigo-700">"OK... But What Makes You Different?"</h2>
+        <h2 className="text-3xl font-bold text-center mb-12">"OK... But What Makes You Different?"</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {differentiators.map((item, index) => (
-            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="bg-orange-500 text-white">
+            <Card key={index} className="bg-gray-200">
+              <CardHeader>
                 <CardTitle className="text-xl font-bold">{item.title}</CardTitle>
               </CardHeader>
-              <CardContent className="mt-4">
+              <CardContent>
                 <p>{item.content}</p>
               </CardContent>
             </Card>

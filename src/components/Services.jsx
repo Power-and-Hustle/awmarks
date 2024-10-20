@@ -18,15 +18,15 @@ const serviceItems = [
 
 const Services = () => {
   return (
-    <section className="py-20 bg-gradient-to-b from-gray-100 to-gray-200">
+    <section className="py-20">
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {serviceItems.map((item, index) => (
-            <Card key={index} className="bg-white shadow-lg hover:shadow-xl transition-shadow duration-300">
-              <CardHeader className="bg-teal-500 text-white">
+            <Card key={index} className="bg-gray-200">
+              <CardHeader>
                 <CardTitle className="text-xl font-bold">{item.title}</CardTitle>
               </CardHeader>
-              <CardContent className="mt-4">
+              <CardContent>
                 <p>{item.content}</p>
               </CardContent>
             </Card>
