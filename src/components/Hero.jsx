@@ -9,7 +9,7 @@ const Hero = () => {
         <h1 className="text-4xl font-bold mb-4">More Growth. More Clients.</h1>
         <p className="text-xl mb-2 text-red-500 font-semibold">Guaranteed.</p>
         <Link to="/contact">
-          <Button className="bg-red-500 hover:bg-red-600 text-white font-bold py-2 px-4 rounded">
+          <Button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded text-lg">
             Yes, I Want That!!
           </Button>
         </Link>
