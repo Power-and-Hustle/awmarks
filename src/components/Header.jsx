@@ -18,7 +18,7 @@ const Header = () => {
           <img 
             src="/aw-marks-logo.png" 
             alt="AW MARKS Marketing" 
-            className="h-12 w-auto object-contain"
+            className="h-12 w-auto"
           />
         </Link>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
