@@ -14,8 +14,12 @@ const Header = () => {
   return (
     <header className="bg-gray-200 text-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
-        <Link to="/" className="text-2xl font-bold hover:text-gray-600 transition-colors">
-          AW MARKS
+        <Link to="/" className="hover:opacity-80 transition-opacity">
+          <img 
+            src="/aw-marks-logo.png" 
+            alt="AW MARKS Marketing" 
+            className="h-12 w-auto"
+          />
         </Link>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
