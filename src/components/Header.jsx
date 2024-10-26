@@ -15,11 +15,15 @@ const Header = () => {
     <header className="bg-gray-200 text-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="hover:opacity-80 transition-opacity">
-          <svg width="300" height="60" viewBox="0 0 300 60" xmlns="http://www.w3.org/2000/svg" className="h-16 w-auto mx-auto object-cover">
-            <path d="M0 30 C0 13.4 13.4 0 30 0 L45 0 L45 15 L30 15 C21.7 15 15 21.7 15 30 C15 38.3 21.7 45 30 45 L45 45 L45 60 L30 60 C13.4 60 0 46.6 0 30 Z" fill="#000000"/>
-            <text x="60" y="35" fontSize="32" fontFamily="Arial, sans-serif" fontWeight="bold" fill="#000000">AW MARKS</text>
-            <text x="60" y="52" fontSize="16" fontFamily="Arial, sans-serif" fill="#000000">MARKETING</text>
-          </svg>
+          <div className="flex items-center">
+            <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 20 C0 9 9 0 20 0 L30 0 L30 10 L20 10 C14.5 10 10 14.5 10 20 C10 25.5 14.5 30 20 30 L30 30 L30 40 L20 40 C9 40 0 31 0 20 Z" fill="#000000"/>
+            </svg>
+            <div className="ml-2 flex flex-col">
+              <span className="text-xl font-bold leading-none">AW MARKS</span>
+              <span className="text-sm leading-none">MARKETING</span>
+            </div>
+          </div>
         </Link>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
