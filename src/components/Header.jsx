@@ -16,14 +16,17 @@ const Header = () => {
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="hover:opacity-80 transition-opacity">
           <div className="flex items-center">
-            <svg width="60" height="40" viewBox="0 0 60 40" xmlns="http://www.w3.org/2000/svg">
-              <g transform="translate(0, 5)">
-                {/* Curved arrow */}
-                <path d="M0 20 C0 10 5 0 15 0 L20 0 A10 10 0 0 1 25 15" stroke="#000000" fill="none" strokeWidth="3"/>
+            <svg width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
+              <g transform="translate(5, 5)">
+                {/* Oval base */}
+                <ellipse cx="30" cy="15" rx="30" ry="15" fill="none" stroke="black" strokeWidth="2"/>
                 {/* Bar chart */}
-                <rect x="15" y="15" width="8" height="15" fill="#000000"/>
-                <rect x="25" y="10" width="8" height="20" fill="#000000"/>
-                <rect x="35" y="5" width="8" height="25" fill="#000000"/>
+                <rect x="15" y="8" width="8" height="14" fill="black"/>
+                <rect x="25" y="5" width="8" height="17" fill="black"/>
+                <rect x="35" y="2" width="8" height="20" fill="black"/>
+                {/* Curved arrow */}
+                <path d="M5 20 C5 12 8 8 15 8 L15 8" stroke="black" fill="none" strokeWidth="2"/>
+                <path d="M13 6 L15 8 L13 10" stroke="black" fill="none" strokeWidth="2"/>
               </g>
             </svg>
             <div className="ml-3 flex flex-col">
