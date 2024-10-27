@@ -21,12 +21,12 @@ const Header = () => {
                 {/* Oval base */}
                 <ellipse cx="30" cy="15" rx="30" ry="15" fill="none" stroke="black" strokeWidth="2"/>
                 {/* Bar chart */}
-                <rect x="15" y="8" width="8" height="14" fill="black"/>
-                <rect x="25" y="5" width="8" height="17" fill="black"/>
-                <rect x="35" y="2" width="8" height="20" fill="black"/>
+                <rect x="20" y="10" width="8" height="12" fill="black"/>
+                <rect x="30" y="6" width="8" height="16" fill="black"/>
+                <rect x="40" y="2" width="8" height="20" fill="black"/>
                 {/* Curved arrow */}
-                <path d="M5 20 C5 12 8 8 15 8 L15 8" stroke="black" fill="none" strokeWidth="2"/>
-                <path d="M13 6 L15 8 L13 10" stroke="black" fill="none" strokeWidth="2"/>
+                <path d="M10 20 C10 10 15 8 20 8" stroke="black" fill="none" strokeWidth="2"/>
+                <path d="M18 6 L20 8 L18 10" stroke="black" fill="none" strokeWidth="2"/>
               </g>
             </svg>
             <div className="ml-3 flex flex-col">
