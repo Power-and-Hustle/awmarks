@@ -22,9 +22,9 @@ const Header = () => {
                 <rect x="20" y="10" width="8" height="12" fill="black"/>
                 <rect x="30" y="6" width="8" height="16" fill="black"/>
                 <rect x="40" y="2" width="8" height="20" fill="black"/>
-                {/* Curved arrow - made straighter */}
-                <path d="M0 25 C5 25 15 15 20 15" stroke="black" fill="none" strokeWidth="2"/>
-                <path d="M18 13 L20 15 L18 17" stroke="black" fill="none" strokeWidth="2"/>
+                {/* Arrow line matching reference */}
+                <path d="M0 30 C5 28 15 20 20 20" stroke="black" fill="none" strokeWidth="2"/>
+                <path d="M18 18 L20 20 L18 22" stroke="black" fill="none" strokeWidth="2"/>
                 {/* New curved shape under bars */}
                 <path d="M20 22 C30 22 40 22 50 22 L50 30 C40 30 30 30 20 30 Z" fill="black"/>
               </g>
