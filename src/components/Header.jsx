@@ -18,15 +18,15 @@ const Header = () => {
           <div className="flex items-center">
             <svg width="80" height="40" viewBox="0 0 80 40" xmlns="http://www.w3.org/2000/svg">
               <g transform="translate(5, 5)">
-                {/* Oval base */}
-                <ellipse cx="30" cy="15" rx="30" ry="15" fill="none" stroke="black" strokeWidth="2"/>
                 {/* Bar chart */}
                 <rect x="20" y="10" width="8" height="12" fill="black"/>
                 <rect x="30" y="6" width="8" height="16" fill="black"/>
                 <rect x="40" y="2" width="8" height="20" fill="black"/>
                 {/* Curved arrow */}
-                <path d="M10 20 C10 10 15 8 20 8" stroke="black" fill="none" strokeWidth="2"/>
+                <path d="M0 20 C0 10 15 8 20 8" stroke="black" fill="none" strokeWidth="2"/>
                 <path d="M18 6 L20 8 L18 10" stroke="black" fill="none" strokeWidth="2"/>
+                {/* New curved shape under bars */}
+                <path d="M20 22 C30 22 40 22 50 22 L50 30 C40 30 30 30 20 30 Z" fill="black"/>
               </g>
             </svg>
             <div className="ml-3 flex flex-col">
