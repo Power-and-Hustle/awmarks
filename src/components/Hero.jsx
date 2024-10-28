@@ -6,7 +6,7 @@ const Hero = () => {
   return (
     <section className="bg-gray-800 text-white py-20">
       <div className="container mx-auto text-center">
-        <h1 className="text-4xl font-bold mb-8">More Growth. More Clients.</h1>
+        <h1 className="text-4xl font-bold mb-12">More Growth. More Clients.</h1>
         <p className="text-5xl mb-2 text-red-500 font-semibold">Guaranteed.</p>
         <Link to="/contact">
           <Button className="bg-red-500 hover:bg-red-600 text-white font-bold py-3 px-6 rounded text-lg">
