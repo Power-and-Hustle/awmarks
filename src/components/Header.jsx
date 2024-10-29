@@ -10,16 +10,25 @@ import {
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const [imageError, setImageError] = useState(false);
 
   return (
     <header className="bg-gray-200 text-gray-800 p-4">
       <div className="container mx-auto flex justify-between items-center">
         <Link to="/" className="hover:opacity-80 transition-opacity">
-          <img 
-            src="/aw-marks-logo.png" 
-            alt="AW MARKS Marketing" 
-            className="h-12 w-auto object-contain"
-          />
+          {!imageError ? (
+            <img 
+              src="/aw-marks-logo.png" 
+              alt="AW MARKS Marketing" 
+              className="h-12 w-auto object-contain"
+              onError={() => setImageError(true)}
+            />
+          ) : (
+            <div>
+              <h1 className="text-2xl font-bold text-gray-800">AW MARKS</h1>
+              <p className="text-sm text-gray-600">Marketing</p>
+            </div>
+          )}
         </Link>
         <DropdownMenu open={isOpen} onOpenChange={setIsOpen}>
           <DropdownMenuTrigger asChild>
